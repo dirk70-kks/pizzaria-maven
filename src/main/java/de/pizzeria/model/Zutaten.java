@@ -1,2 +1,4 @@
 package de.pizzeria.model;
-public class Zutaten {}
+public class Zutaten {
+    private double aufpreis;
+    private String name;}
