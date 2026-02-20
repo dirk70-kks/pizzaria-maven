@@ -1,0 +1,8 @@
+{
+    "netbeans.jdkhome": "/Library/Java/JavaVirtualMachines/temurin-25.jdk/Contents/Home",
+    "netbeans.project.jdkhome": "/Library/Java/JavaVirtualMachines/temurin-25.jdk/Contents/Home",
+    "terminal.integrated.env.osx": {
+        "JAVA_HOME": "/Library/Java/JavaVirtualMachines/temurin-25.jdk/Contents/Home",
+        "PATH": "/Library/Java/JavaVirtualMachines/temurin-25.jdk/Contents/Home/bin:${env:PATH}"
+    }
+}
