@@ -1,5 +1,10 @@
 package de.pizzeria.model;
 public class Kunden {
-String name;
 
+    
+    private int kundennummer;
+    private String name;
+    private String adresse;
+    private String telefonnummer;
+    
 }
