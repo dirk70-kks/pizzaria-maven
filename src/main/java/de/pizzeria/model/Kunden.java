@@ -1,2 +1,5 @@
 package de.pizzeria.model;
-public class Kunden {}
+public class Kunden {
+String name;
+
+}
