@@ -7,9 +7,9 @@ public class Pizza {
     private String name;
     private String groesse;
     private double basisPreis;
-    private List<Zutat> zutatenliste;
+    private List<Zutaten> zutatenliste;
     
-    public Pizza(int pizzanr, string name, string groesse, double basisPreis) {
+    public Pizza(int pizzanr, String name, String groesse, double basisPreis) {
         
         this.pizzanr = pizzanr;
         this.name = name;
