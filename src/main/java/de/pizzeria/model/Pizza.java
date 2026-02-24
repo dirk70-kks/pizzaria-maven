@@ -20,7 +20,7 @@ public class Pizza {
         this.pizzaliste = newArrayList<>();
         
     }
-    
+    //srt+getter
     public void addPizza(Pizza pizza) {
         
         this.pizzaliste.add(pizza);
