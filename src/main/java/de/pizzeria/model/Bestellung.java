@@ -42,5 +42,14 @@ public class Bestellung {
    public void setGeliefert(boolean geliefert) {
         this.geliefert = geliefert;
     }
+
+public double berechneGesamtpreis() {
+        double summe = 0.0;
  
+        for (Pizza p : pizzen) {
+            summe += p.berechnePreis();
+        }
+ 
+        return summe;
+    }
 }
