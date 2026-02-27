@@ -13,22 +13,22 @@ public class Kunden {
        this.Telefonnummer = telefonnummer;
     
     }
-//Setter Methode fÃ¼r Kunde
+//Rückgabe Methode fuer Kunde
     public double getKunden() {
         return kundennumer;
     }
     public String getName(){
         return name;
     }
-
+    // Rückgabe Adresse
     public String getAdresse(){
         return adresse;
     }
-
+    //
     public String getTelefonnummer(){
         return Telefonnummer;
     }
-//Setter Methode
+//Rückgabe Kundennummer
     public void setKundenummer(double kundennummer) {
         this.kundennumer = kundennummer;
     }
