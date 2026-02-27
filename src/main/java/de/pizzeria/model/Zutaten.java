@@ -1,6 +1,6 @@
 package de.pizzeria.model;
 public class Zutaten {
-    
+    //Attribute
     private String name;
     private double aufpreis;
 
