@@ -13,7 +13,7 @@ public class Kunden {
        this.Telefonnummer = telefonnummer;
     
     }
-//Setter Methode für Kunde
+//Setter Methode fÃ¼r Kunde
     public double getKunden() {
         return kundennumer;
     }
