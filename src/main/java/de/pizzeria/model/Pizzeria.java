@@ -16,18 +16,18 @@ public class Pizzeria {
     }
 
 
-    public void registriereKunde(Kunde k) {
-        if (k != null && !kunden.contains(k)) {
-            kunden.add(k);
+    public void registriereKunde(Kunde kunde) {
+        if (k != null && !kunden.contains(kunde)) {
+            kunden.add(kunde);
         }
     }
 
 
-    public Bestellung erstelleBestellung(Kunde k) {
+    public Bestellung erstelleBestellung(Kunde kunde) {
         if (k == null) {
             throw new IllegalArgumentException("Kunde darf nicht null sein");
         }
-        Bestellung b = new Bestellung(k);
+        Bestellung b = new Bestellung(kunde);
         bestellungen.add(b);
         return b;
     }
@@ -40,3 +40,50 @@ public class Pizzeria {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//hello world!
+this is a test

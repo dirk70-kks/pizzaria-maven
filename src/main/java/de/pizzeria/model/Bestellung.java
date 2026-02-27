@@ -7,8 +7,8 @@ public class Bestellung {
     private Date bestellDatum;
     private boolean geliefert;
  
-    private List<Pizza> pizzen;    
- 
+             
+    private List<Pizza> pizzen;   
   
     public Bestellung(int bestellNr, Date bestellDatum, List<Pizza> pizzen) {
         this.bestellNr = bestellNr;
@@ -31,6 +31,13 @@ public class Bestellung {
  
     public List<Pizza> getPizzen() {
         return pizzen;
+    }
+    
+    public void addPizza()
+            
+    {
+    
+    
     }
  
    public void setGeliefert(boolean geliefert) {

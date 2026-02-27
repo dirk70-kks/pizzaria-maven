@@ -5,7 +5,7 @@ public class Kunden {
     private String adresse;
     private String Telefonnummer;
 
-    
+   //Konstruktor 
     public Kunden(int kundennummer, String name, String adresse, String telefonnummer){
        this.kundennumer = kundennummer;
        this.name = name;
@@ -13,7 +13,7 @@ public class Kunden {
        this.Telefonnummer = telefonnummer;
     
     }
-
+//Setter Methode für Kunde
     public double getKunden() {
         return kundennumer;
     }
@@ -28,7 +28,7 @@ public class Kunden {
     public String getTelefonnummer(){
         return Telefonnummer;
     }
-
+//Setter Methode
     public void setKundenummer(double kundennummer) {
         this.kundennumer = kundennummer;
     }
