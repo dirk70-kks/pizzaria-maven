@@ -1,5 +1,5 @@
 package de.pizzeria.model;
-import java.util.List;
+import java.util.ArrayList;
 
 public class Pizza {
 
@@ -7,20 +7,21 @@ public class Pizza {
     private String name;
     private String groesse;
     private double basisPreis;
-    private List<Zutat> zutatenliste;
-    private List<Pizza> pizzaliste;
+    private ArrayList<Zutaten> zutatenliste;
+    private ArrayList<Pizza> pizzaliste;
     
-    public Pizza(int pizzanr, string name, string groesse, double basisPreis) {
+    //Konstruktor
+    public Pizza(int pizzanr, String name, String groesse, double basisPreis) {
         
         this.pizzanr = pizzanr;
         this.name = name;
         this.groesse = groesse;
         this.basisPreis = basisPreis;
-        this.zutatenliste = newArraylist<>();
-        this.pizzaliste = newArrayList<>();
+        this.zutatenliste = new ArrayList<>();
+        this.pizzaliste = new ArrayList<>();
         
     }
-    //srt+getter
+    //Setter & Getter Methoden
     public void addPizza(Pizza pizza) {
         
         this.pizzaliste.add(pizza);
@@ -63,21 +64,19 @@ public class Pizza {
         this.basisPreis = basisPreis;
     }
 
-    public List<Zutat> getZutatenliste() {
+    public ArrayList<Zutaten> getZutatenliste() {
         return zutatenliste;
     }
 
-    public void setZutatenliste(List<Zutat> zutatenliste) {
+    public void setZutatenliste(ArrayList<Zutaten> zutatenliste) {
         this.zutatenliste = zutatenliste;
     }
 
-    public List<Pizza> getPizzaliste() {
+    public ArrayList<Pizza> getPizzaliste() {
         return pizzaliste;
     }
 
-    public void setPizzaliste(List<Pizza> pizzaliste) {
+    public void setPizzaliste(ArrayList<Pizza> pizzaliste) {
         this.pizzaliste = pizzaliste;
     }
 }
-
-
