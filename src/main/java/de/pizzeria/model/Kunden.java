@@ -5,7 +5,7 @@ public class Kunden {
     private String adresse;
     private String Telefonnummer;
 
-    
+   //Konstruktor 
     public Kunden(int kundennummer, String name, String adresse, String telefonnummer){
        this.kundennumer = kundennummer;
        this.name = name;
