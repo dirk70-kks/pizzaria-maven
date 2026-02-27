@@ -28,7 +28,7 @@ public class Kunden {
     public String getTelefonnummer(){
         return Telefonnummer;
     }
-
+//Setter Methode
     public void setKundenummer(double kundennummer) {
         this.kundennumer = kundennummer;
     }
