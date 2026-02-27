@@ -7,14 +7,12 @@ public class Bestellung {
     private Date bestellDatum;
     private boolean geliefert;
  
-    private Kunde kunde;           
-    private List<Pizza> pizzen;    
- 
+             
+    private List<Pizza> pizzen;   
   
-    public Bestellung(int bestellNr, Date bestellDatum, Kunde kunde, List<Pizza> pizzen) {
+    public Bestellung(int bestellNr, Date bestellDatum, List<Pizza> pizzen) {
         this.bestellNr = bestellNr;
         this.bestellDatum = bestellDatum;
-        this.kunde = kunde;
         this.pizzen = pizzen;
         this.geliefert = false;
     }
@@ -31,16 +29,28 @@ public class Bestellung {
         return geliefert;
     }
  
-    public Kunde getKunde() {
-        return kunde;
-    }
- 
     public List<Pizza> getPizzen() {
         return pizzen;
+    }
+    
+    public void addPizza()
+            
+    {
+    
+    
     }
  
    public void setGeliefert(boolean geliefert) {
         this.geliefert = geliefert;
     }
+
+public double berechneGesamtpreis() {
+        double summe = 0.0;
  
+        for (Pizza p : pizzen) {
+            summe += p.berechnePreis();
+        }
+ 
+        return summe;
+    }
 }
