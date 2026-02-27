@@ -9,6 +9,7 @@ public class Pizza {
     private double basisPreis;
     private List<Zutaten> zutatenliste;
     
+    //Konstuktor
     public Pizza(int pizzanr, String name, String groesse, double basisPreis) {
         
         this.pizzanr = pizzanr;
