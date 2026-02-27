@@ -10,9 +10,10 @@ public class Bestellung {
              
     private List<Pizza> pizzen;   
   
-    public Bestellung(int bestellNr, Date bestellDatum) {
+    public Bestellung(int bestellNr, Date bestellDatum, List<Pizza> pizzen) {
         this.bestellNr = bestellNr;
         this.bestellDatum = bestellDatum;
+        this.pizzen = pizzen;
         this.geliefert = false;
     }
     
