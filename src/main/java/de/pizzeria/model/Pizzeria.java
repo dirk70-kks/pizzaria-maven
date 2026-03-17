@@ -5,26 +5,24 @@ import java.util.List;
 
 public class Pizzeria {
 
-    private Liste<Kunde> kunden;
-    private Liste<Bestellung> bestellungen;
-    private Liste<Pizza> pizzas;
-
+    private final List<Kunde> kunden;
+    private final List<Bestellung> bestellungen;
+    private final List<Pizza> pizzas;
+    
     public Pizzeria() {
-        this.kunden = new Liste<>();
-        this.bestellungen = new Liste<>();
-        this.pizzas = new Liste<>();
+        this.kunden = new ArrayList<>();
+        this.bestellungen = new ArrayList<>();
+        this.pizzas = new ArrayList<>();
     }
 
-
     public void registriereKunde(Kunde kunde) {
-        if (k != null && !kunden.contains(kunde)) {
+        if (kunde != null && !kunden.contains(kunde)) {
             kunden.add(kunde);
         }
     }
 
-
     public Bestellung erstelleBestellung(Kunde kunde) {
-        if (k == null) {
+        if (kunde == null) {
             throw new IllegalArgumentException("Kunde darf nicht null sein");
         }
         Bestellung b = new Bestellung(kunde);
@@ -32,58 +30,7 @@ public class Pizzeria {
         return b;
     }
 
-
     public List<Pizza> getPizzas() {
         return new ArrayList<>(pizzas);
     }
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//hello world!
-this is a test
